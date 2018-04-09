@@ -8,7 +8,8 @@ export class Main {
             eMain : document.querySelector('main'),
             aImports: document.querySelectorAll('link[rel="import"]'),
             oImports: {},
-            bMenu:  document.querySelector("#botonMenu")
+            bMenu:  document.querySelector('#botonMenu'),
+            reloj: document.getElementById('reloj'),
         }
         this.user = {
             nombre: localStorage.getItem('nombre'),
@@ -26,6 +27,11 @@ export class Main {
         })
         this._cargarTemplate('home')
         this.vista.bMenu.addEventListener("click", () => this.desplegarMenu(), false)
+
+        var myWorker = new Worker("./app/worker.js");
+        myWorker.onmessage = function (oEvent) {
+         this.vista.reloj.innerHTML = oEvent.data
+}.bind(this);
         
     }
     menuItems(oEv){
