@@ -4,7 +4,10 @@
   "description": "Proyecto (Hands On) HTML, CSS y JS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "./node_modules/.bin/node-sass -w -o ./dist/css ./sass",
+    "stylus": "stylus -w ./src/style.styl -o ./dist/style.css",
+    "start": "supervisor main.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +20,14 @@
   },
   "homepage": "https://github.com/Espartaco99/Proyecto1Babel#readme",
   "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
     "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3"
   }
 }

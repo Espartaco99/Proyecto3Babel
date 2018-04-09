@@ -7,12 +7,13 @@ aside{
     border-radius: 5px;
     border: solid 1px blue;
     padding:2%;
+    
+    div {
+        display: flex;
+        justify-content: center;
+        margin: 1%;
+    }
    
-}
-aside div{
-   display: flex;
-    justify-content: center;
-    margin: 1%;
 }
 
 figure{
@@ -32,19 +33,13 @@ img{
 @media screen and (min-width: 700px){
     article{
         width: 100%;
-      
     }
-   
-    
     section{
-       
         width:55%
     }
     figure{    
         width:45%;
         margin-top:30%;
-     
-      
     }
     .articulo{
         display:inline-block;       
@@ -71,16 +66,19 @@ img{
         width: 30%;
         float: right;
         margin-top: 44px;
-    }
-    aside iframe{
-        width: 100%;
 
+        iframe{
+            width: 100%;
+        }
     }
-    .template_container article{
-        display: block;
-        width: 70%;
-    }
-    .template_container figure{
-        margin-top:10%;
+
+    .template_container {
+        article{
+            display: block;
+            width: 70%;
+        }
+        figure{
+            margin-top:10%;
+        }
     }
 }
