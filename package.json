@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/Espartaco99/Proyecto1Babel#readme",
   "dependencies": {
-    "http-server": "^0.11.1"
+    "font-awesome": "^4.7.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.8.3",
+    "webpack": "^4.5.0"
   }
 }

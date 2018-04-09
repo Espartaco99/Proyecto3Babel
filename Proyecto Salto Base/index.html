@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <link rel="shortcut icon" href="./Logo_Salto_Base.ico">
     <meta charset="UTF-8">
@@ -13,61 +14,91 @@
     <link rel="import" href="./templates/centros.html" title="centros">
     <link rel="import" href="./templates/competiciones.html" title="competiciones">
     <link rel="import" href="./templates/historia.html" title="historia">
-    <script src = "./app/app.js" type="module" ></script>
+    <script src="./app/app.js" type="module"></script>
 </head>
+
 <body>
-    
+
     <div class="container">
         <header>
-            <a href="#"><img src="./img/Logo_Salto_Base.jpg" alt="Logo Salto Base"></a>
+            <a href="#">
+                <img src="./img/Logo_Salto_Base.jpg" alt="Logo Salto Base">
+            </a>
             <h1>Salto Base</h1>
-            <button id="botonMenu" class="botonMenu"><span class ="fa fa-bars"></span></button>
+            <button id="botonMenu" class="botonMenu">
+                <span class="fa fa-bars"></span>
+            </button>
         </header>
         <nav id="menu_escritorio">
             <ul class="flex">
-                <li><a href="#" title="home">Inicio</a></li>
-                <li><a href="#" title="centros">Centros</a></li>
-                <li><a href="#" title="historia">Historia</a></li>
-                <li><a href="#" title="competiciones">Competiciones</a></li>
-                <li><a href="#" title="about">About</a></li>
-            </ul>    
+                <li>
+                    <a href="#" title="home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" title="centros">Centros</a>
+                </li>
+                <li>
+                    <a href="#" title="historia">Historia</a>
+                </li>
+                <li>
+                    <a href="#" title="competiciones">Competiciones</a>
+                </li>
+                <li>
+                    <a href="#" title="about">About</a>
+                </li>
+            </ul>
         </nav>
-        <nav id="menu_movil" class="oculto">    
+        <nav id="menu_movil" class="oculto">
             <ul class="block">
-                <li><a href="#" title="home">Inicio</a></li>
-                <li><a href="#" title="centros">Centros</a></li>
-                <li><a href="#" title="historia">Historia</a></li>
-                <li><a href="#" title="competiciones">Competiciones</a></li>
-                <li><a href="#" title="about">About</a></li>
+                <li>
+                    <a href="#" title="home">Inicio</a>
+                </li>
+                <li>
+                    <a href="#" title="centros">Centros</a>
+                </li>
+                <li>
+                    <a href="#" title="historia">Historia</a>
+                </li>
+                <li>
+                    <a href="#" title="competiciones">Competiciones</a>
+                </li>
+                <li>
+                    <a href="#" title="about">About</a>
+                </li>
             </ul>
         </nav>
         <main></main>
         <footer>
             <div class="nombres">
                 <div id="hcard-Diego-Garzon-Molina" class="vcard">
-                        <span class="fn n">
-                           <span class="given-name">Diego</span>
-                         <span class="additional-name"></span>
-                         <span class="family-name">Garzon Molina</span>
-                       </span>
-                       </div>
-                       <div id="hcard-Jesus-Perucha" class="vcard">
-                            <span class="fn n">
-                               <span class="given-name">Jesus</span>
-                             <span class="additional-name"></span>
-                             <span class="family-name">Perucha Perez</span>
-                           </span>
-                           </div>
-                        </div>
-                        <div class="direccion">
-                        <div class="org">Babel</div>
-                        <div class="adr">
-                         <div class="street-address">Av America</div>
-                         <span class="locality">Madrid</span>
-                        </div>
-                        </div>
+                    <span class="fn n">
+                        <span class="given-name">Diego</span>
+                        <span class="additional-name"></span>
+                        <span class="family-name">Garzon Molina</span>
+                    </span>
+                </div>
+                <div id="hcard-Jesus-Perucha" class="vcard">
+                    <span class="fn n">
+                        <span class="given-name">Jesus</span>
+                        <span class="additional-name"></span>
+                        <span class="family-name">Perucha Perez</span>
+                    </span>
+                </div>
+            </div>
+            <div class="direccion">
+                <div class="org">Babel</div>
+                <div class="adr">
+                    <div class="street-address">Av America</div>
+                    <span class="locality">Madrid</span>
+                </div>
+            </div>
+            <div class="center">
+                <span id="reloj"></span>
+            </div>
+
 
         </footer>
     </div>
 </body>
+
 </html>
