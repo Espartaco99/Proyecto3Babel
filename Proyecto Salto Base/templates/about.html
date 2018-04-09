@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<template title="about">
+    <link rel="stylesheet" href="./css/style_about.css">
+    <div id="autores_container">
+            <h2>Autores</h2>
+        <article class="autores">
+            <section class="cv">
+                <p><strong>Nombre:</strong> Diego Garzon</p>
+                <p><strong>Fecha de nacimiento:</strong>  17 de Febrero de 1993</p>
+                <p><strong>Estudios:</strong> Graduado en ingeniería informatica por la Universidad Carlos III de Madrid. Estudiando Máster en desarrollo de aplicaciones y servicios moviles por la Universidad Politécnica de Madrid</p>
+                <p><strong>Aficiones:</strong> Salto Base, paracaidismo, y fan absoluto e incondicional del helado</p>
+            </section>
+            <figure class="left">
+                <img src="./img/image_about_autor1.jpg" alt="Autor 1, Diego Garzon" title="Autor 1, Diego Garzon">
+            </figure>
+        </article>
+        <article class="autores">
+            <section class="left">
+                <p><strong>Nombre:</strong> Jesús Perucha</p>
+                <p><strong>Fecha de nacimiento:</strong> 30 de Junio de 1995.</p>
+                <p><strong>Estudios:</strong> Estudiando Grado de ingeniería del software en la Universidad Complutense de Madrid.</p>
+                <p><strong>Aficiones:</strong> Salto Base, curling y amante de la programación.</p>
+            </section>
+            <figure class="right">
+                <img src="./img/image_about_autor2.jpg" alt="Autor 1, Jesús Perucha" title="Autor 2, Jesús Perucha">
+            </figure>
+     
+        </article>
+    </div>
+
+
+    <div id="formulario" class="oculto">
+            <h2>Contacta con nosotros</h2>
+            <form name="form_1" id="form_1" method="post"> 
+                <ul>
+                    <li><label for="nombre">Nombre: <input id ="nombre" type="text" name="nombre" placeholder="Introduce tu nombre" required></label></li>
+                    <li><label for="email">Email:<input id="email" name="email" type="email" placeholder="Introduce tu email" required></label></li>
+                    <li><label>¿Cuanta experiencia tienes en deportes de riesgo?</label></li>
+                    <li><label for="radio_poco"><input type="radio" id="radio_poco" name="experiencia" value="Poca" required>Poco</label></li>
+                    <li><label for="radio_normal"><input type="radio" id="radio_normal" name="experiencia"  value="Normal" required>Normal</label> </li>
+                    <li><label for="radio_mucho"><input type="radio" id="radio_mucho" name="experiencia"  value="Mucha" required>Mucho</label></li>
+                    <li><label for="coment">Envianos tu opinión:</label></li>
+                    <li><textarea id="coment" name="coment" placeholder="Escriba los comentarios que consideres oportunos"></textarea></li>
+                    <li><label for="checkbox"><input type="checkbox" name="noticias" id="checkbox">Deseo recibir noticias y oportunidades sobre salto base.</label></li>         
+                    
+                </ul>
+                <div class="center">
+                   
+                    <button type="reset">Borrar</button>
+                    <button id="submit" type="submit">Enviar</button>
+                </div>
+           </form>
+    </div>
+    <div id="datosEnviados" class="oculto">
+            <h2>Datos</h2>
+            <ul>
+                <li> <label >Nombre: </label><label id="nombreDatos"></label></li>
+                <li> <label >Email: </label><label id="emailDatos"></label></li>
+                <li> <label >Experiencia en deportes de riesgo: </label><label id="experienciaDatos"></label> </li>
+                <li> <label >Envianos tu opinión: </label><label id="opinionDatos"></label></li>
+                <li> <label >Deseo recibir noticias y oportunidad sobre salto base: </label><label id="checkboxDatos"></label> </li>
+            </ul>
+    </div>
+
+    <label class="center">
+        <a href="#" id="linkAutores" title="linkAutores">Autores</a>/
+        <a href="#" id="linkFormulario" class="desactivo" >Contacta con nosotros:</a>
+    </label>
+</template>

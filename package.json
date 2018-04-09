@@ -1,0 +1,22 @@
+{
+  "name": "proyecto1babel",
+  "version": "1.0.0",
+  "description": "Proyecto (Hands On) HTML, CSS y JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Espartaco99/Proyecto1Babel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Espartaco99/Proyecto1Babel/issues"
+  },
+  "homepage": "https://github.com/Espartaco99/Proyecto1Babel#readme",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}
