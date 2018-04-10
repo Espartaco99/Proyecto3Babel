@@ -118,9 +118,10 @@ footer {
 .nombres {
   width: 50%;
   float: left;
-  text-align: end; }
+  text-align: end;
+  padding-top: 5px; }
 
-.direccion {
+.direccion_footer {
   text-align: start;
   float: left;
   width: 50%;
@@ -147,6 +148,9 @@ input [type='email'] {
 
 button, textarea {
   border-radius: 5px; }
+
+.reloj {
+  margin-left: 47.5%; }
 
 @media screen and (max-width: 700px) {
   header > button {
