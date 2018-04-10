@@ -32,9 +32,9 @@ export class Main {
       () => this.desplegarMenu(),
       false
     );
-    this.vista.imagenes.forEach(item =>{
+   /*  this.vista.imagenes.forEach(item =>{
       item.addEventListener("click",requestFullscreen);
-    });
+    }); */
     var myWorker = new Worker("./app/worker.js");
     myWorker.onmessage = function(oEvent) {
       this.vista.reloj.innerHTML = oEvent.data;
