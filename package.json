@@ -1,17 +1,17 @@
 {
-  "name": "proyecto1babel",
+  "name": "proyecto3babel",
   "version": "1.0.0",
   "description": "Proyecto (Hands On) HTML, CSS y JS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "./node_modules/.bin/node-sass -w -o ./dist/css ./sass",
+    "sass": "../node_modules/.bin/node-sass -o ./dist/css ./sass",
     "stylus": "stylus -w ./src/style.styl -o ./dist/style.css",
     "start": "supervisor main.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Espartaco99/Proyecto1Babel.git"
+    "url": "git+https://github.com/Espartaco99/Proyecto3Babel.git"
   },
   "author": "",
   "license": "ISC",
