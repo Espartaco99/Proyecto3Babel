@@ -139,7 +139,7 @@ img {
 .oculto {
   display: none !important; }
 
-.flex {
+.menu_escritorio {
   display: flex;
   justify-content: space-around; }
 
@@ -165,7 +165,7 @@ button, textarea {
   h3 {
     font-size: 2.25rem;
     font-weight: 400; }
-  .flex {
+  .menu_escritorio {
     display: none; } }
 
 @media screen and (min-width: 700px) {

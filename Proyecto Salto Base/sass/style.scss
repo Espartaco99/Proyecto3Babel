@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css?family=Questrial');
 html{
     font-family: "Questrial", sans-serif;
-
     &:after{
         content: "";
         position: fixed;
@@ -129,9 +128,13 @@ footer {
 }
 
 
+<<<<<<< HEAD
 
 
 .direccion_footer{
+=======
+.direccion{
+>>>>>>> 3bf7e19224cc9e207df02a74f71a58867cf38f73
     text-align: start;
     float: left;
     width: 50%;
@@ -151,7 +154,7 @@ img {
 .oculto{
     display:none !important;
 }
-.flex{
+.menu_escritorio{
     display: flex;
     justify-content: space-around;
 }
@@ -186,7 +189,7 @@ button, textarea{
         font-size: 2.25rem;
         font-weight: 400;
     }
-    .flex{
+    .menu_escritorio{
         display:none;
     }
 }
