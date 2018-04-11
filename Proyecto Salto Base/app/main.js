@@ -3,7 +3,6 @@ export class Main {
     console.log("Main loaded");
     this.vista = {
       aBtnsMenu: document.querySelectorAll("a"),
-      imagenes: document.querySelectorAll("img"),
       eArticle: document.querySelector("article"),
       body: document.querySelector("body"),
       eMain: document.querySelector("main"),
@@ -27,15 +26,17 @@ export class Main {
       this.vista.oImports[elem.title] = elem.import;
     });
     this._cargarTemplate("home");
+   
+    this.imagenes = document.querySelectorAll("img");
+    this.imagenes.forEach(item => {
+      item.addEventListener("click",this.fullScreen.bind(this), false);
+    });
     this.vista.bMenu.addEventListener(
       "click",
       () => this.desplegarMenu(),
       false
     );
-    this.imagenes = document.querySelectorAll("img");
-    this.imagenes.forEach(item => {
-      item.addEventListener("click", this.fullScreen, false);
-    });
+   
     var myWorker = new Worker("./app/worker.js");
     myWorker.onmessage = function(oEvent) {
       this.vista.reloj.innerHTML = oEvent.data;
@@ -54,6 +55,7 @@ export class Main {
   }
   menuItems(oEv) {
     this._cargarTemplate(oEv.target.title);
+   
     oEv.preventDefault();
   }
   _cargarTemplate(id) {
