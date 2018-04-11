@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "./node_modules/.bin/node-sass -w -o ./Proyecto\\ Salto\\ Base/dist/css ./Proyecto\\ Salto\\ Base/sass",
-    "build": "webpack --config ./Proyecto\\ Salto\\ Base/webpack.config.js"
+    "build": "webpack --config ./webpack.config.js"
   },
   "repository": {
     "type": "git",

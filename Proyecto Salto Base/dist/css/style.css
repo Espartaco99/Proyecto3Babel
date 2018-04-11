@@ -108,18 +108,21 @@ footer {
   font-weight: bold;
   font-size: 1rem;
   margin-top: 3%;
-  width: 110%;
-  margin-left: -5%; }
+  width: 111.5%;
+  margin-left: -6%; }
   footer figure {
     padding-top: 0%; }
     footer figure img {
       align-items: flex-end;
       max-width: 15rem;
-      padding: 0%; }
+      padding: 0%;
+      width: 70%;
+      height: 70%; }
 
 .nombres {
   width: 50%;
   text-align: end;
+  margin-left: 10%;
   padding-top: 5px;
   flex-grow: 3; }
 
