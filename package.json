@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "../node_modules/.bin/node-sass -w -o ./dist/css ./sass",
-    "build": "webpack --config webpack.config.js"
+    "sass": "./node_modules/.bin/node-sass -w -o ./Proyecto\\ Salto\\ Base/dist/css ./Proyecto\\ Salto\\ Base/sass",
+    "build": "webpack --config ./Proyecto\\ Salto\\ Base/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -15,9 +15,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Espartaco99/Proyecto1Babel/issues"
+    "url": "https://github.com/Espartaco99/Proyecto3Babel/issues"
   },
-  "homepage": "https://github.com/Espartaco99/Proyecto1Babel#readme",
+  "homepage": "https://github.com/Espartaco99/Proyecto3Babel#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "font-awesome": "^4.7.0",

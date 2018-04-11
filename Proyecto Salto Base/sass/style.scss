@@ -111,32 +111,38 @@ footer {
     margin-top: 3%;
     width:110%;
     margin-left: -5%;
-   
     figure{
-        float:right;
+        padding-top: 0%;
         img{
-            max-height: 3.5rem;
+            align-items: flex-end;
+            max-width: 15rem;
+            padding: 0%;
         }
     }
 }
 
 .nombres{
     width: 50%;
-    float: left;
     text-align: end;
     padding-top: 5px;
+    flex-grow: 3;
 }
 
+.footerFlex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
 
-
+}
 
 .direccion_footer{
     text-align: start;
-    float: left;
     width: 50%;
     padding-top:5px;
     padding-left: 5%;
-    display: block;
+    flex-grow: 3;
+    margin-left: 10%;
 }
 img {
     width: 100%;
@@ -168,6 +174,7 @@ button, textarea{
 }
 .reloj{
     margin-left:47.5%;
+    
     
 }
 @media screen and (max-width: 700px){
