@@ -32,16 +32,25 @@ export class Main {
       () => this.desplegarMenu(),
       false
     );
-   /*  this.vista.imagenes.forEach(item =>{
-      item.addEventListener("click",requestFullscreen);
-    }); */
+    this.imagenes = document.querySelectorAll("img");
+    this.imagenes.forEach(item => {
+      item.addEventListener("click", this.fullScreen, false);
+    });
     var myWorker = new Worker("./app/worker.js");
     myWorker.onmessage = function(oEvent) {
       this.vista.reloj.innerHTML = oEvent.data;
     }.bind(this);
   }
-  requestFullscreen(oEv){
-   
+  fullScreen(elem) {
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.msRequestFullScreen) {
+      elem.msRequestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+      elem.webkitRequestFullscreen();
+    }
   }
   menuItems(oEv) {
     this._cargarTemplate(oEv.target.title);
@@ -67,20 +76,19 @@ export class Main {
       var coords = position.coords;
       var geocoder = new google.maps.Geocoder();
       var latlng = new google.maps.LatLng(coords.latitude, coords.longitude);
-      geocoder.geocode({'latLng': latlng}, function(results, status) {
+      geocoder.geocode({ latLng: latlng }, function(results, status) {
         if (status == google.maps.GeocoderStatus.OK) {
-           if (results[0]) {
-            console.log(results[0])
-            document.getElementById('address').value = results[0].formatted_address
-           } else {
-              alert('No results found');
-           }
+          if (results[0]) {
+            console.log(results[0]);
+            document.getElementById("address").value =
+              results[0].formatted_address;
+          } else {
+            alert("No results found");
+          }
         } else {
-           alert('Geocoder failed due to: ' + status);
+          alert("Geocoder failed due to: " + status);
         }
-     })
-     
-
+      });
     });
   }
   desplegar(oEv) {
