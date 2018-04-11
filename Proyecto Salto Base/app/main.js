@@ -26,7 +26,7 @@ export class Main {
       this.vista.oImports[elem.title] = elem.import;
     });
     this._cargarTemplate("home");
-   
+    this.elem = document.querySelector("#prueba");
     this.imagenes = document.querySelectorAll("img");
     this.imagenes.forEach(item => {
       item.addEventListener("click",this.fullScreen.bind(this), false);
@@ -42,15 +42,15 @@ export class Main {
       this.vista.reloj.innerHTML = oEvent.data;
     }.bind(this);
   }
-  fullScreen(elem) {
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen();
-    } else if (elem.msRequestFullScreen) {
-      elem.msRequestFullscreen();
-    } else if (elem.mozRequestFullScreen) {
-      elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) {
-      elem.webkitRequestFullscreen();
+  fullScreen(oElem) {
+    if (oElem.requestFullscreen) {
+      oElem.requestFullscreen();
+    } else if (oElem.msRequestFullScreen) {
+      oElem.msRequestFullscreen();
+    } else if (oElem.mozRequestFullScreen) {
+      oElem.mozRequestFullScreen();
+    } else if (oElem.webkitRequestFullscreen) {
+      oElem.webkitRequestFullscreen();
     }
   }
   menuItems(oEv) {
@@ -59,9 +59,11 @@ export class Main {
     oEv.preventDefault();
   }
   _cargarTemplate(id) {
+    
     const IMPORT = this.vista.oImports[id];
     const ELEM = IMPORT.querySelector(`[title=${id}]`);
     this.vista.eMain.innerHTML = ELEM.innerHTML;
+   
     if (id === "about") this.listenersAbout();
   }
   listenersAbout() {
